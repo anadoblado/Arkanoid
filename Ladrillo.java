@@ -1,4 +1,4 @@
-package Juegos.arkanoid;
+package Juegos.arkanoid2;
 
 import java.awt.Color;
 
@@ -10,11 +10,10 @@ import java.util.List;
 public class Ladrillo extends ObjetoAPintar{
 
 	protected  Color color;
-	public static Color COLORES[] = new Color[] {Color.BLACK, Color.BLUE, Color.CYAN, Color.DARK_GRAY, Color.GREEN,
-			Color.LIGHT_GRAY, Color.MAGENTA};
 	
-	protected static final int ANCHO_LADRILLO = 40;
-	protected static final int ALTO_LADRILLO = 20;
+	
+	public static final int ANCHO_LADRILLO = 40;
+	public static final int ALTO_LADRILLO = 20;
 
 	
 	public Ladrillo() {
@@ -27,7 +26,7 @@ public class Ladrillo extends ObjetoAPintar{
 
 	@Override
 	public void paint(Graphics g) {
-		g.setColor(this.color);
+		g.setColor(getColor());
 		g.fillRect(xCoord, yCoord, ANCHO_LADRILLO, ALTO_LADRILLO);
 		g.setColor(Color.white);
 		g.drawRect(xCoord, yCoord, ANCHO_LADRILLO, ALTO_LADRILLO);
@@ -76,6 +75,12 @@ public class Ladrillo extends ObjetoAPintar{
 	 */
 	public static int getAltoLadrillo() {
 		return ALTO_LADRILLO;
+	}
+
+	@Override
+	public void seMueve() {
+		// TODO Auto-generated method stub
+		
 	}
 
 	

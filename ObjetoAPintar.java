@@ -1,4 +1,4 @@
-package Juegos.arkanoid;
+package Juegos.arkanoid2;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -22,6 +22,7 @@ public abstract class ObjetoAPintar {
 	 * Pintar que van a heredar
 	 */
 	public abstract void paint(Graphics g);
+	public abstract void seMueve();
 
 
 	

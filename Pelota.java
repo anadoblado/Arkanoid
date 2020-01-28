@@ -1,4 +1,4 @@
-package Juegos.arkanoid;
+package Juegos.arkanoid2;
 
 import java.awt.Color;
 import java.awt.Graphics;
